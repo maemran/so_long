@@ -38,7 +38,7 @@ void *win = mlx_new_window(mlx, width, height, "Window Title");
 
 ### In MiniLibX, building interactive applications like `so_long` revolves around **event-driven programming**.
 
-- **Hooking** is the mechanism that links an **event** (like a key press or mouse click) to a **callback function** you define. This function runs when the event occurs.
+**Hooking** is the mechanism that links an **event** (like a key press or mouse click) to a **callback function** you define. This function runs when the event occurs.
   
 **🎯 Events** are actions such as:
   - Pressing or releasing a key (`KeyPress`, `KeyRelease`)
