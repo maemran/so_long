@@ -40,17 +40,11 @@ void *win = mlx_new_window(mlx, width, height, "Window Title");
 
 - **Hooking** is the mechanism that links an **event** (like a key press or mouse click) to a **callback function** you define. This function runs when the event occurs.
   
-- **🎯 Events** are actions such as:
+  **🎯 Events** are actions such as:
   - Pressing or releasing a key (`KeyPress`, `KeyRelease`)
-  - Clicking the mouse (`ButtonPress`)
-  - Moving the mouse (`MotionNotify`)
-  - Exposing (refreshing) the window (`Expose`)
-  - Closing the window (`DestroyNotify`)
 
-- **🧪 Masks** define **which events your hook listens to**. For example:
+ **🧪 Masks** define **which events your hook listens to**. For example:
   - `KeyPressMask` → `(1L << 0)`
-  - `ButtonPressMask` → `(1L << 2)`
-  - `ExposureMask` → `(1L << 15)`
 
 Using `mlx_hook()`, you can control exactly what behavior happens and when. This is the core of creating a responsive game:
 - Move the player with keys 🕹️  
