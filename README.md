@@ -111,7 +111,6 @@ Your game map is the core of the gameplay. It must follow strict rules to be val
 | `P`       | Player Start Position      | Must appear **once only**   |
 | `C`       | Collectible                | At least **one required**   |
 | `E`       | Exit                       | At least **one required**   |
-| `T`       | (Bonus) Trap or Enemy      | Optional (bonus only)       |
 
 ### 🧪 Validation Rules
 
